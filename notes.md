@@ -1,6 +1,6 @@
 # CS 260 Notes
 
-[Otter Pop](https://simon.cs260.click)
+[Otter Popj](https://simon.cs260.click)
 
 ## Helpful links
 
