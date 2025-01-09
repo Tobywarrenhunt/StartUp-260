@@ -1,6 +1,6 @@
 # CS 260 Notes
 
-[My startup](https://simon.cs260.click)
+[Otter Pop](https://simon.cs260.click)
 
 ## Helpful links
 
