@@ -1,8 +1,11 @@
-# Your startup name here
+# Frosty Snippers
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A brief description of the application here. 
+
+My application will allow someone to be able to add a message to a certain color of otter pop and when that otter pop gets cut it will display that message 
+
 
 
 > [!NOTE]
@@ -26,7 +29,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Imagine a fun, interactive way to send personalized messages! My application lets you add a custom message to a specific color of Otter Pop. When the Otter Pop is cut, your message is revealed, creating a surprise moment for the recipient. Whether it’s for a special occasion, a fun reveal, or just a unique way to communicate, this application brings creativity and joy to an everyday treat!
 
 ### Design
 
@@ -43,20 +46,20 @@ sequenceDiagram
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- I will have a login and logout 
+- customizable messages that you create 
+- A way for the message to be display 
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - I will have a login page and then a page on where you can create a message and then a page where you can see the message display
+- **CSS** - I will have a color scheme and a I will have a design that will be able to see and images 
+- **React** - Your messages will be able to show on the Screen of an automatic otter pop cutter instantly 
+- **Service** - It will allow you to have messages about otter pops 
+- **DB/Login** - stores messages that you create
+- **WebSocket** - will pop a message of users most used messages 
 
 ## 🚀 AWS deliverable
 
