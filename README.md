@@ -46,8 +46,8 @@ I am going to use the required technologies in the following ways.
 - **HTML** - I will have a login page and then a page on where you can create a message and then a page where you can see the message display
 - **CSS** - I will have a color scheme and a I will have a design that will be able to see and images 
 - **React** - Your messages will be able to show on the Screen of an automatic otter pop cutter instantly 
-- **Service** - It will allow you to have messages about otter pops 
-- **DB/Login** - stores messages that you create
+- **Service** - this will display a random quote gernator that gives you examples of inspiring quotes you can use for your messages 
+- **DB/Login** - stores messages that you create and stores the login users
 - **WebSocket** - will pop a message of users most used messages 
 
 ## 🚀 AWS deliverable
