@@ -31,7 +31,7 @@ Imagine a fun, interactive way to send personalized messages! My application let
 
 ### Design
 
-![Design image](placeholder.png)
+![Design image](IMG_1697.HEIC)
 
 ![image of my website](IMG_1697.HEIC)
 
