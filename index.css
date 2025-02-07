@@ -75,6 +75,15 @@ nav {
     grid-template-rows: 1fr 600px 1fr;
 }
 
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    font-family: "Hedvig Letters Sans", serif;;
+}
+
 .main-1 {
     grid-column: 2/3;
     grid-row: 2/3; 
@@ -105,16 +114,21 @@ nav {
     grid-row: 2/3;
     margin-top: 100px;
     margin-bottom: 100px;
-    border-radius: 50px;
+    border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+.middle .welcome {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
 .middle .main-1 {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .middle .main-2 {
@@ -126,19 +140,38 @@ nav {
     grid-column: 2/3;
     grid-row: 4/5;
     padding-bottom: 60px;
-
 }
 
 .login {
     margin-right: 10px;
     border-radius: 15px;
     font-size: 20px;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);              
+    font-size: 16px;           
+    padding: 10px 28.888px;        
+    border: black;              
+    border-radius: 15px;        
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #92a2b0;
 }
 
 .signup {
     margin-left: 10px;
     border-radius: 15px;
     font-size: 20px;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);              
+    font-size: 16px;           
+    padding: 10px 20px;        
+    border: black;              
+    border-radius: 15px;        
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
 }
 
 input[type=email], input[type=password] {
@@ -154,30 +187,24 @@ input[type=email], input[type=password] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
+  footer {
+    margin-top: 30px;
     background-color: #233A59;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;  
+    font-family:"Hedvig Letters Sans", serif;
+    color: white;
+}
+
 
 
 

@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Ultra&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frosty Snippers</title>
+    <link rel="stylesheet" href="play.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Frosty Snippers</h1>
-        </div>
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="play.html">Play</a></li>
-            <li><a href="messages.html">Messages</a></li>
-        </nav>
-        <hr>
-    </header>
+    <body>
+        <head>
+            <nav class="gird-1">
+                <div class="nav-1">
+                    <a class="frosty-snippers" href="index.html">Frosty Snippers</a>
+                </div>
+                <div class="nav-2">
+                    <a class="home" href="index.html">Home</a>
+                    <a class="play" href="play.html">Play</a>
+                    <a class="messages" href="messages.html">Messages</a>
+                </div>
+            </nav>
+        </head>
     <main>
-        <div>
-            <h1>Green</h1>
-            <input type="Message" placeholder="Message">
-            <img src="#" alt="Green Otter Pop">
+        <div class="grid-2">
+            <div class="c_green">
+                <input class="m_green" type="Message_green" placeholder="">
+            </div>
+            <div class="trans-1"></div>
+            <div class="c_red">
+                <input class="m_red" type="Message_red" placeholder="">
+            </div>
+            <div class="trans-2"></div>
+            <div class="c_blue">
+                <input class="m_blue" type="Message_blue" placeholder="">
+            </div>
+            <div class="trans-3"></div>
+            <div class="c_purple">
+                <input class="m_purple" type="Message_purple" placeholder="">
+            </div>
+            <div class="trans-4"></div>
+            <div class="c_orange">
+                <input class="m_orange" type="Message_orange" placeholder="">
+            </div>
+            <div class="trans-5"></div>
+            <div class="cutter">
+                <h1 class="cut-here">Cut Here</h1>
+                <div class="cut-message">                
+                    <input  type="cut-message" placeholder="Display message">
+                </div>
+            </div>
         </div>
-        <div>
-            <h1>Red</h1>
-            <input type="Message" placeholder="Message">
-            <img src="#" alt="Red Otter Pop">
-        </div>
-        <div>
-            <h1>Blue</h1>
-            <input type="Message" placeholder="Message">
-            <img src="#" alt="Blue Otter Pop">
-        </div>
-        <div>
-            <h1>Purple</h1>
-            <input type="Message" placeholder="Message">
-            <img src="#" alt="Purple Otter Pop">
-        </div>
-        <div>
-            <h1>Orange</h1>
-            <input type="Message" placeholder="Message">
-            <img src="#" alt="Orange Otter Pop">
-        </div>
-        <div>
-            <h1>Cut Here</h1>
-            <img src="#" alt="Automactic otter pop cutter">
-            <input type="text" placeholder="Display message">
-        </div>
-        <div>
-            <H1>Random quote generator</H1>
-            <button>Generate</button>
-            <p>display generated quote</p>
+        <div class="grid-3">
+                <H1 class="quote">Random quote generator</H1>
+                <div class="generate-center">    
+                    <button class="generate">Generate</button>
+                </div>
+                <p class="display">display generated quote</p>
         </div>
     </main>
     <footer>
-        <hr>
-        <a href="https://github.com/Tobywarrenhunt/StartUp-260.git">GitHub</a>
+        <a class="github" href="https://github.com/Tobywarrenhunt/StartUp-260.git">GitHub</a>
     </footer>
 </body>
 </html>
