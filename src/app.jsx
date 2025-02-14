@@ -10,23 +10,23 @@ import { Messages } from './messages/messages';
 export default function App() {
   return (
     <BrowserRouter>
-      <head>
+
             <nav className="gird-1">
                 <div className="nav-1">
-                    <Navlink className="frosty-snippers" to="login">Frosty Snippers</Navlink>
+                    <NavLink className="frosty-snippers" to="/">Frosty Snippers</NavLink>
                 </div>
                 <div className="nav-2">
-                    <NavLink className="Home" to="login">Home</NavLink>
+                    <NavLink className="home" to="/">Home</NavLink>
                     <NavLink className="play" to="play">Play</NavLink>
                     <NavLink className="messages" to="messages">Messages</NavLink>
                 </div>
             </nav>
-        </head>
+
 
         <Routes>
             <Route path='/' element={<Login />} exact />
             <Route path='/play' element={<Play />} />
-            <Route path='/scores' element={<Messages />} />
+            <Route path='/messages' element={<Messages />} />
             <Route path='*' element={<NotFound />} />
         </Routes>  
         

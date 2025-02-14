@@ -66,7 +66,7 @@ nav {
 
 /* Grid-2 */
 
-.grid-2 {
+.place-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px 100px 100px 100px;
@@ -493,60 +493,3 @@ footer {
 
 
 
-
-
-/* 
-  
-.c_red {
-    display: flex;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.c_blue {
-    display: flex;
-    grid-column: 1/2;
-    grid-row: 3/4; 
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.c_purple {
-    display: flex;
-    grid-column: 1/2;  
-    grid-row: 4/5;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.c_orange {
-    display: flex;
-    grid-column: 1/2;
-    grid-row: 5/6;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-h1 {
-    font-size: 30px;
-    text-decoration: none;
-    font: bold;
-    font-family:"Hedvig Letters Sans", serif;
-}
-
-input[type=Message] {
-    width: 300px;
-    padding: 12px 20px;
-    margin: 0px 0;
-    display: inline-block;
-    border: 2px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
- */

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap');
+
+.body {
+    background-color: white;
+}
+
 header {
     background-color: #233A59;
 }

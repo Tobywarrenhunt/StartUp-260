@@ -1,6 +1,6 @@
-body {
-    background-color: #ffffff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ultra&display=swap');
+
 
 header {
     background-color: #233A59;
@@ -69,7 +69,7 @@ nav {
 
 /* grid-2 */
 
-.grid-2 {
+.area-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 600px 1fr;

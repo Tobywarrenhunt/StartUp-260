@@ -2,9 +2,9 @@ import React from 'react';
 import "./messages.css";
 
 
-export function About() {
+export function Messages() {
   return (
-<main>
+    <main>
         <div>
             <h1 className="old-messages">Old Messages</h1>
         </div>
@@ -50,7 +50,7 @@ export function About() {
             <h1 className="most-messages">Most used messages</h1>
         </div>
         <div className="image">
-            <img src="otterpop.jpg" alt="ptter pops">
+            <img src="public/otterpop.jpg" alt="otter pops" />
         </div>
     </main>
   );
