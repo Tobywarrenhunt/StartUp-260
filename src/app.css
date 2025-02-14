@@ -1,0 +1,87 @@
+header {
+    background-color: #233A59;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px;
+    background-color: #233A59;
+}
+
+.nav-1 {
+    background-color: #233A59; 
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.nav-2 {
+    background-color: #233A59; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.frosty-snippers {
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family:"Hedvig Letters Sans", serif;
+}
+
+.home {
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font: bold;
+    font-family:"Hedvig Letters Sans", serif;
+}
+
+.play {
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font: bold;
+    font-family:"Hedvig Letters Sans", serif;
+}
+
+.messages {
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font: bold;
+    font-family:"Hedvig Letters Sans", serif;
+}
+
+
+
+footer {
+    margin-top: 30px;
+    background-color: #233A59;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;  
+    font-family:"Hedvig Letters Sans", serif;
+    color: white;
+}
+
+
+

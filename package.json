@@ -1,0 +1,32 @@
+{
+    "name": "simon-react-p1",
+    "version": "1.0.0",
+    "description": "[My Notes](notes.md)",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "vite": "^6.1.0"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3",
+        "react": "^19.0.0",
+        "react-bootstrap": "^2.10.9",
+        "react-dom": "^19.0.0",
+        "react-router-dom": "^7.1.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tobywarrenhunt/StartUp-260.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Tobywarrenhunt/StartUp-260/issues"
+    },
+    "homepage": "https://github.com/Tobywarrenhunt/StartUp-260#readme"
+}
