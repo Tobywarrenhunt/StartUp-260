@@ -1,4 +1,5 @@
-header {
+
+ header {
     background-color: #233A59;
 }
 
@@ -8,7 +9,7 @@ nav {
     grid-template-rows: 60px;
     background-color: #233A59;
     margin-bottom: 40px;
-}
+} 
 
 .nav-1 {
     background-color: #233A59; 
@@ -66,7 +67,7 @@ nav {
 
 /* Grid-2 */
 
-.place-2 {
+ .place-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px 100px 100px 100px;
@@ -88,6 +89,10 @@ nav {
     border-bottom-right-radius: 30px;
     z-index: 1;
     margin: 10px;
+    resize: none;
+    width: 600px;
+    height: 80px;
+    user-select: none;
 }
 
 .m_green {
@@ -136,6 +141,9 @@ input[type=Message_green] {
     border-bottom-right-radius: 30px;
     z-index: 1;
     margin: 10px;
+    resize: none;
+    width: 600px;
+    height: 80px;
 }
 
 .m_red {
@@ -185,6 +193,9 @@ input[type=Message_red] {
     border-bottom-right-radius: 30px;
     z-index: 1;
     margin: 10px;
+    resize: none;
+    width: 600px;
+    height: 80px;
 }
 
 .m_blue {
@@ -206,9 +217,9 @@ input[type=Message_red] {
 
 .c_blue:hover {
     transform: scale(1.05);
-}
+} 
 
-input[type=Message_blue] {
+ input[type=Message_blue] {
     width: 300px;
     height: 30px;
     display: inline-block;
@@ -234,6 +245,9 @@ input[type=Message_blue] {
     border-bottom-right-radius: 30px;
     z-index: 1;
     margin: 10px;
+    resize: none;
+    width: 600px;
+    height: 80px;
 }
 
 .m_purple {
@@ -283,6 +297,9 @@ input[type=Message_purple] {
     border-bottom-right-radius: 30px;
     z-index: 1;
     margin: 10px;
+    resize: none;
+    width: 600px;
+    height: 80px;
 }
 
 .m_orange {
@@ -355,7 +372,7 @@ input[type=cut-message] {
 
   /* Grid-3 */
 
-  .grid-3 {
+ .grid-3 {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -408,7 +425,7 @@ input[type=cut-message] {
 .display {
     font-family:"Hedvig Letters Sans", serif;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     grid-column: 1/2;
     grid-row: 3/4;
@@ -433,63 +450,16 @@ footer {
     text-decoration: none;  
     font-family:"Hedvig Letters Sans", serif;
     color: white;
-}
+} 
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 870px) {
+    .c_green, .c_blue, .c_orange, .c_purple, .c_red {
+        width: 200px; 
+        height: 80px;
+    }
+  }
