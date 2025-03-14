@@ -1,27 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import "./messages.css";
 
-export function Messages({ cutMessage }) {
-  // Local state to manage the input fields
-  const [messages, setMessages] = useState({
-    green: '',
-    red: '',
-    blue: '',
-    purple: '',
-    orange: '',
-  });
+import React from 'react';
+import './messages.css';
 
-  useEffect(() => {
-    // Update all messages with the cutMessage when it changes
-    setMessages({
-      green: cutMessage,
-      red: cutMessage,
-      blue: cutMessage,
-      purple: cutMessage,
-      orange: cutMessage,
-    });
-  }, [cutMessage]);
-
+export function Messages({ messages }) {
   return (
     <main>
       <div>
@@ -44,7 +25,8 @@ export function Messages({ cutMessage }) {
                 <input
                   type="text"
                   value={messages.green}
-                  onChange={(e) => setMessages({ ...messages, green: e.target.value })}
+                  onChange={(e) => {}}
+                  readOnly
                 />
               </td>
             </tr>
@@ -55,7 +37,8 @@ export function Messages({ cutMessage }) {
                 <input
                   type="text"
                   value={messages.red}
-                  onChange={(e) => setMessages({ ...messages, red: e.target.value })}
+                  onChange={(e) => {}}
+                  readOnly
                 />
               </td>
             </tr>
@@ -66,7 +49,8 @@ export function Messages({ cutMessage }) {
                 <input
                   type="text"
                   value={messages.blue}
-                  onChange={(e) => setMessages({ ...messages, blue: e.target.value })}
+                  onChange={(e) => {}}
+                  readOnly
                 />
               </td>
             </tr>
@@ -77,7 +61,8 @@ export function Messages({ cutMessage }) {
                 <input
                   type="text"
                   value={messages.purple}
-                  onChange={(e) => setMessages({ ...messages, purple: e.target.value })}
+                  onChange={(e) => {}}
+                  readOnly
                 />
               </td>
             </tr>
@@ -88,24 +73,14 @@ export function Messages({ cutMessage }) {
                 <input
                   type="text"
                   value={messages.orange}
-                  onChange={(e) => setMessages({ ...messages, orange: e.target.value })}
+                  onChange={(e) => {}}
+                  readOnly
                 />
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div>
-        <h1 className="most-messages">Most Used Messages</h1>
-      </div>
-      <div className="image">
-        <img src="/otterpop.jpg" alt="otter pops" />
-      </div>
     </main>
   );
 }
-
-
-
-
-

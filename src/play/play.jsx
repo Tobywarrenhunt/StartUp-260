@@ -1,7 +1,10 @@
+
+
+
 import React, { useState, useRef, useEffect } from 'react';
 import './play.css';
 
-export function Play() {
+export function Play({ updateMessage }) {
   const initialPositions = {
     green: { x: 10, y: 100 },
     red: { x: 10, y: 220 },
@@ -23,7 +26,8 @@ export function Play() {
   });
 
   const [cutMessage, setCutMessage] = useState('');
-  const [randomQuote, setRandomQuote] = useState('');
+  const [ronQuote, setRonQuote] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const elementRefs = {
     green: useRef(null),
@@ -35,37 +39,29 @@ export function Play() {
 
   const cutRef = useRef(null);
 
-  // Function to update messages
-  const updateMessages = (color, message) => {
-    setInputValues(prevValues => ({
-      ...prevValues,
-      [color]: message
-    }));
+  // Fetch Ron Swanson quote from the API
+  const fetchRonQuote = async () => {
+    try {
+      const response = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes'); // Ron Swanson Quotes API URL
+
+      if (!response.ok) {
+        throw new Error(`Error fetching quote: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      setRonQuote(data[0] || 'No quote available.');
+    } catch (error) {
+      console.error('Error fetching quote:', error);
+      setErrorMessage(`Failed to load quote: ${error.message}`);
+      setRonQuote('');
+    }
   };
 
-  const quotesArray = [
-    "The only way to do great work is to love what you do.",
-    "Success is not the key to happiness. Happiness is the key to success.",
-    "Life is what happens when you're busy making other plans.",
-    "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
-    "In the end, it's not the years in your life that count, it's the life in your years.",
-    "Don't cry because it's over, smile because it happened.",
-    "You must be the change you wish to see in the world.",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "Believe you can and you're halfway there.",
-    "It is never too late to be what you might have been.",
-    "You only live once, but if you do it right, once is enough.",
-    "A journey of a thousand miles begins with a single step.",
-    "To live is the rarest thing in the world. Most people exist, that is all.",
-    "Good friends, good books, and a sleepy conscience: this is the ideal life.",
-    "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well."
-  ];
+  useEffect(() => {
+    fetchRonQuote();  // Call the API on mount to get an initial quote
+  }, []);
 
-  const generateRandomQuote = () => {
-    const randomIndex = Math.floor(Math.random() * quotesArray.length);
-    setRandomQuote(quotesArray[randomIndex]);
-  };
-
+  // Drag and Drop Handlers
   const handleMouseDown = (e, color) => {
     setIsDragging(true);
     setDraggedElement(color);
@@ -115,7 +111,7 @@ export function Play() {
       setDraggedElement(null);
 
       if (cutMessage) {
-        updateMessages(draggedElement, cutMessage);
+        updateMessage(draggedElement, cutMessage);  // Send message to parent component
       }
     }
   };
@@ -136,6 +132,11 @@ export function Play() {
       ...prev,
       [color]: e.target.value,
     }));
+  };
+
+  // Button to fetch a new quote
+  const handleNewQuote = () => {
+    fetchRonQuote();
   };
 
   return (
@@ -250,27 +251,25 @@ export function Play() {
         </div>
       </div>
 
-      {/* Random Quote Generator */}
+      {/* Display Ron Swanson Quote */}
       <div className="grid-3">
-        <h1 className="quote">Random quote generator</h1>
-        <div className="generate-center">
-          <button className="generate" onClick={generateRandomQuote}>
-            Generate
-          </button>
+        <h1 className="quote">Ron Swanson Quote</h1>
+        <div className="quote-display">
+          {errorMessage ? (
+            <p style={{ color: 'red' }}>{errorMessage}</p>
+          ) : (
+            <input
+              type="text"
+              value={ronQuote || 'Loading quote...'}
+              readOnly
+              className="quote-input"
+            />
+          )}
         </div>
-        <p className="display">
-          <input type="text" value={randomQuote} readOnly />
-        </p>
+        <button onClick={handleNewQuote} className="generate-quote-btn">
+          Get New Quote
+        </button>
       </div>
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
